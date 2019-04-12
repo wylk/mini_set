@@ -1,0 +1,61 @@
+<!--index.wxml-->
+<view class='body'>
+  <view class='userinfo'>
+    <view class="user_left">
+      <image src='../image/position.png'></image>
+    </view>
+    <view class='user_right'>
+      <view class='user'>
+        <text class='user_name'>{{userAddress.name}}</text>
+        <text class='user_phone'>{{userAddress.tel}}</text>
+      </view>
+      <view class='user_address'>{{userAddress.address}}</view>
+    </view>
+  </view>
+  <view class="line" style='background: url("../image/line.png") 100% repeat;'></view>
+  <view class='shopinfo'>
+    <view class='shop_left'>
+      <image src='{{now_store.logo}}' mode='aspectFit'></image>
+    </view>
+    <view class='shop_right'>{{now_store.name}}</view>
+  </view>
+  <view class='product'>
+    <view class='pro_img'>
+      <image src='{{nowOrder.proList[0].image}}' mode='aspectFit'></image>
+    </view>
+    <view class='pro_info'>
+      <view class='pro_name'>
+        <view>{{nowOrder.proList[0].name}}</view>
+      </view>
+      <view class='pro_attr'>
+        <view>款式：小果【苹果50-80g】</view>
+        <view>重量：带箱10斤【净果9斤】</view>
+      </view>
+      <view class='pro_price'>￥{{nowOrder.proList[0].pro_price}}/件</view>
+    </view>
+  </view>
+  
+  <view class='pro_num'>
+    <view>购买数量</view>
+    <view>{{nowOrder.proList[0].pro_num}}</view>
+  </view>
+
+  <view class='pro_state'>
+    <view>拼团新玩法：</view>
+    <view>开团/参团满员发货（不满自动退款）</view>
+  </view>
+
+<view class='weixin'>
+<image src='../image/weixin.png' mode='aspectFit'></image>
+<view>微信支付</view>
+</view>
+
+  <view class='bottom'>
+    <view class='bottom_left'>
+      <text class="bot_state">免运费</text>
+      <text class='bot_money'>￥{{nowOrder.sub_total}}</text>
+      <text>实付款：</text>
+    </view>
+    <view class='bottom_right' bindtap='payFunc'>立即支付</view>
+  </view>
+</view>

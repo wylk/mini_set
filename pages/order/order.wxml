@@ -1,0 +1,6 @@
+<view class='container' wx:if="{{orderNo}}" >
+  <web-view src="https://mall.epaikj.com/wap/order.php?orderno={{orderNo}}"></web-view>
+</view>
+<view class='container' wx:if="{{orderid}}">
+  <web-view src="https://mall.epaikj.com/wap/order.php?orderid={{orderid}}"></web-view>
+</view>

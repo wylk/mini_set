@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/web/web",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/order/order"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "拼团",
+    "navigationBarTextStyle": "black"
+  }
+}
