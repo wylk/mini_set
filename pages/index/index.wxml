@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class='body'>
-  <view class='userinfo'>
+  <view class='userinfo' bindtap='getAddress'>
     <view class="user_left">
       <image src='../image/position.png'></image>
     </view>

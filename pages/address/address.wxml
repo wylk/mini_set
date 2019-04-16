@@ -1,0 +1,5 @@
+<!--pages/address/address.wxml-->
+<view class='container'>
+<!-- <view>orderNo:{{orderNo}}===openid:{{openid}}=====userid:{{userid}}</view> -->
+  <web-view src="https://mall.epaikj.com/wap/user_address.php?orderno={{orderNo}}&userid={{userid}}&openid={{openid}}"></web-view>
+</view>

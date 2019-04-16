@@ -1,4 +1,4 @@
-// pages/order1/index.js
+// pages/address/address.js
 var app = getApp(),
   $ = app.requirejs("core"),
   s = app.requirejs("jquery");
@@ -8,28 +8,20 @@ Page({
    * 页面的初始数据
    */
   data: {
-    orderNo: "",
-    orderid: '',
-    // url:'https://mall.epaikj.com/wap/order.php',
+    userid : '',
+    orderNo : '',
+    openid : '',
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options);
-    if (options.orderNo) {
-      this.setData({
-        orderNo: options.orderNo,
-      });
-    } else if (options.orderid) {
-      this.setData({
-        orderid: options.orderid,
-      });
-    }
-    console.log(this.data);
-
-
+    this.setData({
+      orderNo: options.orderNo,
+      openid:options.openid,
+      userid:options.userid
+    });
   },
 
   /**
@@ -78,14 +70,6 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    // let users = wx.getStorageSync('user');
-    // if(res.from === 'button'){}
-    // return {
-    //   title:"转发",
-    //   path : this.url+"userid="+users.id,
-    //   success:function(res){
-    //     $.alert(res);
-    //   }
-    // }
+
   }
 })

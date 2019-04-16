@@ -95,7 +95,12 @@ Page({
       }
     }, "json");
   },
-
+  getAddress: function(){
+    var pageObj = this.data;
+    wx.navigateTo({
+      url: "../address/address?orderNo=" + pageObj.orderNo + "&userid="+pageObj.userid+"&openid="+pageObj.openid,
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -142,6 +147,8 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
+    // wx.showShareMenu({
+    //   withShareTicket: true
+    // })
   }
 })
