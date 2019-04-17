@@ -27,6 +27,13 @@ Page({
       userid: options.uid,
     });
     this.getUserInfo(options.orderno, options.uid);
+
+    // this.setData({
+    //   openid: "ol6UN5PyfdsuekiJH1iN-I-afrgU",
+    //   orderNo: "WJ20190417111149426909",
+    //   userid: "1360",
+    // });
+    // this.getUserInfo("WJ20190417111149426909", "1360");
     console.log(this.data);
   },
   getUserInfo: function (orderno, userid) {

@@ -19,25 +19,27 @@
     </view>
     <view class='shop_right'>{{now_store.name}}</view>
   </view>
-  <view class='product'>
-    <view class='pro_img'>
-      <image src='{{nowOrder.proList[0].image}}' mode='aspectFit'></image>
-    </view>
-    <view class='pro_info'>
-      <view class='pro_name'>
-        <view>{{nowOrder.proList[0].name}}</view>
+  <view wx:for="{{nowOrder.proList}}" wx:key="unique">
+    <view class="product">
+      <view class='pro_img'>
+        <image src='{{item.image}}' mode='aspectFit'></image>
       </view>
-      <view class='pro_attr'>
-        <view>款式：小果【苹果50-80g】</view>
-        <view>重量：带箱10斤【净果9斤】</view>
+      <view class='pro_info'>
+        <view class='pro_name'>
+          <view>{{item.name}}</view>
+        </view>
+        <view class='pro_attr'>
+          <view>重量：{{item.pro_weight}}kg</view>
+          <view wx:for="{{item.sku_data_arr}}" wx:key="unique">{{item.name}}：{{item.value}}</view>
+        </view>
+        <view class='pro_price'>￥{{item.pro_price}}/件</view>
       </view>
-      <view class='pro_price'>￥{{nowOrder.proList[0].pro_price}}/件</view>
     </view>
-  </view>
-  
-  <view class='pro_num'>
-    <view>购买数量</view>
-    <view>{{nowOrder.proList[0].pro_num}}</view>
+    
+    <view class='pro_num'>
+      <view>购买数量</view>
+      <view>{{item.pro_num}}</view>
+    </view>
   </view>
 
   <view class='pro_state'>
