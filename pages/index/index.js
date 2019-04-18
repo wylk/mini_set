@@ -30,11 +30,11 @@ Page({
 
     // this.setData({
     //   openid: "ol6UN5PyfdsuekiJH1iN-I-afrgU",
-    //   orderNo: "WJ20190417111149426909",
+    //   orderNo: "WJ20190418153312814365",
     //   userid: "1360",
     // });
-    // this.getUserInfo("WJ20190417111149426909", "1360");
-    console.log(this.data);
+    // this.getUserInfo("WJ20190418153312814365", "1360");
+    // console.log(this.data);
   },
   getUserInfo: function (orderno, userid) {
     var pageObj = this;

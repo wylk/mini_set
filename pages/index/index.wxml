@@ -42,7 +42,7 @@
     </view>
   </view>
 
-  <view class='pro_state'>
+  <view class='pro_state' wx:if="{{nowOrder.type == 6}}">
     <view>拼团新玩法：</view>
     <view>开团/参团满员发货（不满自动退款）</view>
   </view>
