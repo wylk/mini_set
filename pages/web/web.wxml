@@ -1,4 +1,4 @@
 <!--pages/web/index.wxml-->
 <view class="container">
-<web-view src="https://mall.epaikj.com/wap/home.php?id=90&platform=1&openid={{openid}}"></web-view>
+<web-view src="https://mall.epaikj.com/wap/home.php?id=857&platform=1&openid={{openid}}"></web-view>
 </view>
